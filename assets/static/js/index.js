@@ -13,13 +13,13 @@ var httpPort, httpsPort, pageOptions;
                 };
 
                 $.ajaxSetup({
-                    error: function (xhr,) {
+                    error: function (xhr) {
                         if (xhr.status === 401) {
                             layui.layer.msg(lang['TokenInvalid'], function () {
                                 window.location.reload();
                             });
                         }
-                    },
+                    }
                 });
 
                 layui.element.on('nav(leftNav)', function (elem) {
