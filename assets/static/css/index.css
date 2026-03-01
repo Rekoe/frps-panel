@@ -5,7 +5,6 @@
 
 ::-webkit-scrollbar-thumb {
     border-radius: 4px;
-    transition: 0.3s ease-in-out;
 }
 
 html, body {
